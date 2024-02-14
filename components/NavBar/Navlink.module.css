@@ -1,0 +1,16 @@
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.link:hover,
+.link:active {
+  color: #d6d0d0;
+}
+
+.active {
+  color: #d6d0d0;
+}

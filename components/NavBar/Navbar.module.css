@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  background-color: black;
+  height: 60px;
+  justify-content: space-between;
+  padding: 25px;
+  align-items: center;
+  
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding-right: 40px;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 16px;
+}
+
+.bars svg {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: white;
+  width: 28x;
+  height: 28px;
+  display: none;
+}
+
+@media (max-width: 756px) {
+  .nav ul {
+    display: none;
+  }
+
+  .bars svg {
+    display: block;
+  }
+}

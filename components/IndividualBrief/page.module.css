@@ -1,0 +1,71 @@
+/* page.module.css */
+
+.container {
+  display: flex;
+  height: 500px;
+  padding: 10px 100px;
+}
+
+.column {
+  flex: 1;
+  padding: 50px;
+  /* border: 1px solid #ccc; */
+}
+
+.column:first-child {
+  margin-right: 10px;
+}
+
+.row1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 5px;
+}
+
+.row2 {
+  color: #aeadad;
+  text-align: center;
+}
+
+.row3 {
+  display: flex;
+  flex-direction: row;
+  width: 145px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid #090909;
+  margin: 30px 5px;
+  /* transition: display 0.3s ease; */
+}
+
+.row3:hover {
+  background-color: black;
+  color: white;
+}
+
+.row3 svg {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: black;
+  width: 20x;
+  height: 20px;
+  display: block;
+}
+
+.row3:hover svg {
+  stroke: white;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%; /* Ensure the wrapper takes up the full width of the column */
+  height: 100%; /* Ensure the wrapper takes up the full height of the column */
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
