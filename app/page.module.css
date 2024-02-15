@@ -28,6 +28,7 @@
   width: 100%; /* Ensure full width */
   height: 100%; /* Ensure full height */
   margin-top: -60px;
+  text-shadow: 10px 10px 25px rgba(0, 0, 0, 0.222);
 }
 
 .heroText h1 {
@@ -43,6 +44,8 @@
 .heading {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 50px;
 }
 
