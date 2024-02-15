@@ -3,24 +3,29 @@
 .container {
   display: flex;
   height: 500px;
+  width: 100%;
   padding: 10px 100px;
+  margin-bottom: 100px;
+  position: relative;
 }
 
 .column {
+  display: flex; /* Add this */
+  justify-content: center; /* Add this */
+  align-items: center; /* Add this */
   flex: 1;
-  padding: 50px;
-  /* border: 1px solid #ccc; */
 }
 
-.column:first-child {
+/* .column:first-child {
   margin-right: 10px;
-}
+} */
 
 .row1 {
   margin-bottom: 10px;
   font-size: 30px;
   font-weight: 600;
   padding: 20px 5px;
+  text-transform: uppercase;
 }
 
 .row2 {
@@ -59,8 +64,8 @@
 
 .imageWrapper {
   position: relative;
-  width: 100%; /* Ensure the wrapper takes up the full width of the column */
-  height: 100%; /* Ensure the wrapper takes up the full height of the column */
+  width: 70%;
+  height: 90%;
 }
 
 .leftColumn {

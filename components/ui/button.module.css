@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  flex-direction: row;
+  width: 145px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid #090909;
+  margin: 30px 5px;
+  /* transition: display 0.3s ease; */
+  justify-content: center;
+}
+
+.btn svg {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: black;
+  width: 20x;
+  height: 20px;
+  display: block;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.btn:hover svg {
+  stroke: white;
+}

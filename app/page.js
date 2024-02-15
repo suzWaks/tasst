@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
-import IndividualBrief from '@/components/IndividualBrief/page'
+import IndividualBrief from '@/components/HomePage/IndividualBrief/page'
+import ResidenceBanner from '@/components/HomePage/ResidenceBanner/page'
+import Footer from '@/components/Footer/page'
 export default function HomePage() {
   return (
     <div>
@@ -8,7 +10,7 @@ export default function HomePage() {
         <h1>THE TASST FAMILY</h1>
         <h3>Happy family of five</h3>
       </div>
-      <div className={styles.heroImg}>
+      <div className={styles.image}>
         <Image src='/family.jpg' fill />
       </div>
       <div className={styles.heading}>
@@ -16,6 +18,10 @@ export default function HomePage() {
       </div>
 
       <IndividualBrief />
+
+      {/* <ResidenceBanner /> */}
+
+      <Footer />
     </div>
   )
 }

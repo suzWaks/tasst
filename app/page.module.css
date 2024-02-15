@@ -1,10 +1,10 @@
-.heroImg {
+.image {
   position: relative;
-  height: 1080px;
-  z-index: 1;
+  width: 100%;
+  height: 150vh;
 }
 
-.heroImg::before {
+.image::before {
   content: "";
   position: absolute;
   top: 0;
@@ -12,7 +12,7 @@
   width: 100%;
   height: 50%;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
-  pointer-events: none; /* Ensures that the overlay does not interfere with interactions */
+  pointer-events: none; /*Ensures that the overlay does not interfere with interactions*/
   z-index: 2;
 }
 

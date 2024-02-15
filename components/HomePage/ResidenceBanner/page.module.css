@@ -1,0 +1,29 @@
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust as needed */
+  z-index: 0;
+}
+
+.container {
+  background-color: #efefef;
+  display: flex;
+}
+
+.column {
+  display: flex; /* Add this */
+  /* justify-content: center; Add this */
+  align-items: center; /* Add this */
+  flex: 1;
+}
+
+.column:first-child {
+  justify-content: flex-end;
+  padding: 20px 100px;
+}
+
+.imageWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

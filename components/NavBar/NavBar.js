@@ -1,12 +1,33 @@
-import styles from '@/components/NavBar/Navbar.module.css'
-import Bars from '../Icons/Bars'
-import NavLink from './Navlink'
-import Link from 'next/link'
+'use client'
+
+import React, { useEffect, useState } from 'react';
+import styles from '@/components/NavBar/Navbar.module.css';
+import Bars from '../Icons/Bars';
+import NavLink from './Navlink';
+import Link from 'next/link';
 
 export default function NavBar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
         <Link className={styles.logo} href='/'>TASST</Link>
         <div className={styles.bars}><Bars /></div>
         <ul>
@@ -25,5 +46,5 @@ export default function NavBar() {
         </ul>
       </nav>
     </>
-  )
+  );
 }

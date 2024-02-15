@@ -4,4 +4,14 @@
 
 body {
   margin: 0;
-} 
+}
+
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure NavBar is above other content */
+  background-color: #ffffff; /* Add background color if needed */
+  /* Add any other styles you want for the NavBar */
+}
