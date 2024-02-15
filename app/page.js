@@ -11,7 +11,7 @@ export default function HomePage() {
         <h3>Happy family of five</h3>
       </div>
       <div className={styles.image}>
-        <Image src='/family.jpg' fill />
+        <Image src='/family.jpg' fill alt='family pic' />
       </div>
       <div className={styles.heading}>
         <h1>KNOW ABOUT US MORE</h1>

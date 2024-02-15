@@ -9,7 +9,7 @@ export default function IndividualBrief() {
     return (
 
         details.map(data =>
-            <div className={styles.container}>
+            <div className={styles.container} key={data.id}>
                 {data.id % 2 === 0 ? (
                     <>
                         <div className={`${styles.column} ${styles.leftColumn}`}>
