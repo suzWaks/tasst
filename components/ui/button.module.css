@@ -22,7 +22,9 @@
 .btn:hover {
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 .btn:hover svg {
   stroke: white;
+  cursor: pointer;
 }

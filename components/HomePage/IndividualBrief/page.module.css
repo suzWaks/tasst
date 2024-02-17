@@ -1,93 +1,51 @@
-/* page.module.css */
-
 .container {
   display: flex;
-  height: 550px;
-  width: 100%;
-  padding: 10px 100px;
-  margin-bottom: 100px;
-  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 150px;
 }
 
 .column {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex: 1;
+  width: 30px;
+  box-sizing: border-box;
+  display: flex; /* Add display: flex */
+  flex-direction: column; /* Make it a column layout */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center;
 }
 
-.row1 {
-  margin-bottom: 10px;
+.column h2 {
   font-size: 30px;
   font-weight: 600;
-  padding: 20px 5px;
   text-transform: uppercase;
-  text-align: center;
 }
 
-.row2 {
+.column p {
   color: #aeadad;
-  text-align: center;
 }
 
-.row3 {
-  display: flex;
-  flex-direction: row;
-  width: 145px;
-  padding: 10px 20px;
-  font-size: 15px;
-  border: 1px solid #090909;
-  margin: 30px 5px;
-  /* transition: display 0.3s ease; */
+.coltext {
+  order: 0;
 }
 
-.row3:hover {
-  background-color: black;
-  color: white;
+.colImg {
+  order: 1;
 }
-
-.row3 svg {
-  fill: none;
-  stroke-width: 1.5px;
-  stroke: black;
-  width: 20x;
-  height: 20px;
-  display: block;
-}
-
-.row3:hover svg {
-  stroke: white;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 70%;
-  height: 90%;
-}
-
-.leftColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    /* height: 800px; */
-  }
-
+@media (max-width: 960px) {
   .column {
-    width: 100%;
+    flex-basis: 100%;
   }
 
-  .leftColumn {
-    order: 2; /* Change the order of left column */
+  .column:nth-child(odd) {
+    order: -1; /* Change the order of odd columns */
   }
 
-  .row1,
-  .row2 {
-    text-align: center; /* Center text on small screens */
+  .coltext {
+    order: 1;
+  }
+  .colImg {
+    order: 0;
   }
 }
