@@ -23,7 +23,7 @@
   color: white;
 }
 
-.nav ul {
+.links {
   list-style: none;
   /* margin: 0; */
   /* padding-right: 40px; */
@@ -42,11 +42,49 @@
 }
 
 @media (max-width: 756px) {
-  .nav ul {
+  .links {
     display: none;
   }
 
   .bars svg {
     display: block;
+    cursor: pointer;
   }
+}
+
+.sidebar {
+  padding-top: 30px;
+  background-color: black;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul {
+  padding: 40px;
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.cross {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.cross svg {
+  fill: none;
+  stroke-width: 1.5px;
+  stroke: white;
+  width: 28x;
+  height: 28px;
+  cursor: pointer;
 }
